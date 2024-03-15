@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Adequação de CB</title>
+</head>
+<body>
+    <main id="container">
+
+        <section id="img">
+            <img src="assets/img/doctor.svg">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - CB    
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Sexo
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-venus-mars"></i>    
+                        <input class="f" type="radio" name="sexo" value="feminino" id="feminino">
+                        <label for="feminino">Feminino</label>
+                        <input class="m" type="radio" name="sexo" value="masculino" id="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                </div>  
+
+                <div class="input-box"> 
+                    <label for="weight">
+                        Idade
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-user-group"></i>
+                        <input type="number" id="idade" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Circunferência do braço (centímetros)
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="circunferencia" required>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+            </form>
+
+            <div class="hidden" id="infos">
+                <div id="result">
+                    <div id="adequaçao">
+                        <spn id="value"></spn>
+                        <span>Seu CB</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
