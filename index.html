@@ -21,17 +21,18 @@
                 <h1 id="title">
                     Calculadora - CB    
                 </h1>
-
+                
                 <div class="input-box">
                     <label for="weight">
                         Sexo
                     </label>
                     <div class="input-field">
                         <i class="fa-solid fa-venus-mars"></i>    
-                        <input class="f" type="radio" name="sexo" value="feminino" id="feminino">
-                        <label for="feminino">Feminino</label>
-                        <input class="m" type="radio" name="sexo" value="masculino" id="masculino">
-                        <label for="masculino">Masculino</label>
+                        <select class="options" id="sexo" onchange="mostrarIdDoInput()" onclick="mudarCorDeFundo()">
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
                     </div>
                 </div>  
 
@@ -47,7 +48,7 @@
 
                 <div class="input-box">
                     <label for="height">
-                        Circunferência do braço (centímetros)
+                        Circunferência do braço (cm)
                     </label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
@@ -62,7 +63,7 @@
 
             <div class="hidden" id="infos">
                 <div id="result">
-                    <div id="adequaçao">
+                    <div id="adequacao">
                         <spn id="value"></spn>
                         <span>Seu CB</span>
                     </div>

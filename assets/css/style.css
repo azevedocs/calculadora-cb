@@ -68,6 +68,8 @@ body {
     border-radius: 3px;
 }
 
+
+
 .input-box label {
     font-size: 1.1rem;
     color: var(--color-label);
@@ -82,6 +84,15 @@ body {
     padding: 1rem;
     border-radius: 3px;
     margin-top: 3px;
+}
+
+.input-field .options {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: var(--color-label);
+    padding: 0 1rem;
 }
 
 .input-field span 
