@@ -95,7 +95,7 @@ body {
     padding: 0 1rem;
 }
 
-.input-field span 
+.input-field span, 
 .input-field i {
     color: var(--color-label);
     font-size: 1.3rem;
@@ -105,6 +105,15 @@ body {
 .input-field input {
     background-color: transparent;
     border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: var(--color-white);
+    padding: 0 1rem;
+}
+
+.input-field option {
+    background-color: var(--color-fundo-primary);
+    border: transparent;
     width: 100%;
     font-size: 1.3rem;
     color: var(--color-white);
